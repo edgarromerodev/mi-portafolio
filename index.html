@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miportafolio</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="https://kit.fontawesome.com/e0408eb5f5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="LOGO.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">Sobre Mi</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#portafolio">Portafolio</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <i class="fa-solid fa-xmark" onclick="cerrarmenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="abrirmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Diseño</p>
+                <h1>Hola, Soy, <span>Edgar </span> <br> Romero Cuc Chocoj</h1>
+            </div>
+        </div>
+    </div>
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="edgar3.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">Sobre Mí</h1>
+                    <p> Mi pasión por la programación web y mi conjunto de habilidades 
+                        en JavaScript, CSS, ReactJS, MongoDB y Node.js 
+                        me impulsan a crear soluciones web que sean atractivas,
+                        funcionales y efectivas. 
+                        ¡Estoy emocionado por seguir 
+                        explorando este emocionante campo 
+                        y llevar ideas innovadoras a la vida digital.</p>
+
+                        <div class="tab-title">
+                            <p class="tab-links active-link" onclick="opentab('habilidades')">Habilidades</p>
+                            <p class="tab-links" onclick="opentab('experiencia')">Experiencia</p>
+                            <p class="tab-links" onclick="opentab('educacion')">Educación</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="habilidades">
+                            <ul>
+                                <li><span>Frontend</span> <br> Desarrollo de interfaces de usuario (UI) utilizando HTML, CSS y JavaScript. Especializado en diseño de experiencias atractivas y responsivas.</li>
+                                <li><span>Frontend</span> <br> Desarrollo de aplicaciones web utilizando React.js para construir interfaces interactivas y dinámicas.</li>
+                                <li><span>Backend</span> <br> Desarrollo de servidores y lógica de negocio utilizando Node.js, garantizando la robustez y eficiencia del lado del servidor.</li>
+                                <li><span>Base de Datos</span> <br> Experiencia en diseño y gestión de bases de datos MongoDB, asegurando un almacenamiento eficiente y escalable de datos.</li>
+                                <li><span>Desarrollo Full Stack</span> <br> Integración de frontend y backend para crear aplicaciones web completas y funcionales.</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="experiencia">
+                            <ul>
+                                <li><span>Desarrollo de Interfaces</span> <br> Diseño y desarrollo de interfaces web/aplicaciones para una farmacia. Me especialicé en crear experiencias de usuario intuitivas y atractivas que mejoraron la interacción del cliente con la plataforma.</li>
+                                <li><span>Desarrollo de Aplicaciones Web</span> <br> Lideré el desarrollo de aplicaciones web para una farmacia, utilizando tecnologías como HTML, CSS, JavaScript, React.js, Node.js y MongoDB. Esto incluyó la implementación de funcionalidades clave, como gestión de inventario, búsqueda de productos y procesamiento de pedidos.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tab-contents" id="educacion">
+                            <ul>
+                                <li><span>Certificado de JavaScript Básico</span> <br> Sololearn</li>
+                                <li><span>Curso de ReactJS, MongoDB, Node.js</span> <br> LevelUp | Diciembre 2022 - Marzo 2023</li>
+                                <li><span>Certificado de JavaScript Intermedio</span> <br> Sololearn</li>
+                                <li><span>Certificado de ReactJS</span> <br> Sololearn</li>
+                                <li><span>Certificado de SQL</span> <br> Sololearn</li>
+                                <li><span>Certificado de ReactJS Avanzado</span> <br> Hackerrank</li>
+                                <li><span>Curso de JavaScript Básico</span> <br> Platzi | Año 2022</li>
+                            </ul>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+        <!-----------------seccion de servicios---------------------->
+        <section id="servicios">
+            <div class="container">
+                <h1 class="sub-title">Mis Servicios</h1>
+                <div class="servicios-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Desarrollo Web</h2>
+                        <p>
+                            Ofrezco servicios de desarrollo web para crear sitios web modernos y funcionales. Utilizo las últimas tecnologías y prácticas de desarrollo para construir soluciones adaptadas a las necesidades de mis clientes.
+                        </p>
+                        
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop-simple"></i>
+                        <h2>Diseño UI/UX</h2>
+                        <p>
+                            Me especializo en diseño de interfaz de usuario (UI) y experiencia de usuario (UX). Creo diseños atractivos y fáciles de usar que mejoran la interacción entre los usuarios y las aplicaciones.
+                        </p>
+                        
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>Desarrollo de Aplicaciones</h2>
+                        <p>
+                            Desarrollo aplicaciones web y móviles personalizadas para satisfacer las necesidades específicas de mis clientes. Desde el frontend hasta el backend, garantizo soluciones robustas y escalables.
+                        </p>
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+                <!-----------------seccion de servicios---------------------->
+    <section id="portafolio">
+        <div class="container">
+            <h1 class="sub-title"> Mi trabajos</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./imagen/todolist.jfif" alt="">
+                    <div class="layer">
+                        <h3>Lista de tareas</h3>
+                        <p>El proyecto de Lista de Tareas es una aplicación web que permite a los usuarios gestionar sus tareas diarias de manera eficiente. Con esta aplicación, los usuarios pueden agregar nuevas tareas, editar las existentes, marcarlas como completadas y eliminarlas cuando sea necesario.</p>
+                        <a href="https://taupe-macaron-1a6e08.netlify.app/ " target="_blank"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="./imagen/clima.jfif" alt="">
+                    <div class="layer">
+                        <h3>App para Clima</h3>
+                        <p> Clima es una aplicación web que proporciona a los usuarios información en tiempo real sobre las condiciones climáticas. La aplicación utiliza una API de clima para obtener datos actualizados y mostrarlos de manera fácil de entender.</p>
+                        <a href="https://gilded-croquembouche-8e711e.netlify.app/" target="_blank" ><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="./imagen/paginaweb.jfif" alt="">
+                    <div class="layer">
+                        <h3>Tienda en Línea</h3>
+                        <p>La Tienda en Línea, es una plataforma web diseñada para proporcionar a los usuarios una experiencia de compra intuitiva y eficiente. Ofrece una interfaz atractiva donde los clientes pueden explorar productos, agregarlos al carrito, ajustar cantidades y realizar compras de manera sencilla. Una característica única de esta tienda es que, al confirmar la compra, se redirige automáticamente al cliente al WhatsApp del propietario para facilitar la comunicación directa.</p>
+                        <a href="https://whimsical-biscochitos-e21d33.netlify.app/ "  target="_blank"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">Ver más</a>
+        </div>
+    </section>
+     <!-----------------seccion de contacto---------------------->
+    <section id="contacto">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contáctame</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i>edgarromerocuc94@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+50245984577</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100082536101229&locale=es_LA" target="_blank"> <i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=45984577&text=" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/in/edgar-romero-cuc-chocoj-ba1897272/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/edgarromero_123/?hl=es-es" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@edukuk1" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                        
+                    </div>
+                    <a href="CV_EDGAR.pdf" class="btn  btn2" download="CV_EDGAR.pdf" target="_blank">Descargar CV</a>
+                </div>
+                <div class="contact-right">
+                    <form onsubmit="enviarWhatsApp(event)">
+                        <input type="text" id="name" placeholder="Tu nombre" required>
+                        <input type="email" id="email" placeholder="Tu correo">
+                        <textarea id="mensaje" rows="6" placeholder="Tu mensaje"></textarea>
+                        <button type="submit" class="btn btn2">Enviar</button>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+        <div class="copyright" id="yearCopyright">
+            <p>&copy; <span id="currentYear"></span> Edgar Romero Cuc Chocoj <i class="fa-solid fa-heart"></i>- Portafolio</p>
+        </div>
+    </section>
+    <script src="app.js"></script>
+    
+</body>
+</html>
