@@ -23,6 +23,7 @@ function cerrarmenu() {
     sidemenu.style.right = "-200px";
 }
 
+
 function enviarWhatsApp(event) {
     event.preventDefault();
 
@@ -45,4 +46,25 @@ function enviarWhatsApp(event) {
 }
 
 
+
+
+
+//funcion para el boton contactame 
+function abrirWhatsApp() {
+    const telefono = "50245984577"
+    const mensaje = "Hola, quiero más informaión"
+    const url =  `https://api.whatsapp.com/send?phone=${telefono}&texto=${encodeURIComponent(mensaje)}`
+    window.open(url, "_blank")
+}
+
+
+
+
+
+
+
+
+
+
+//obtener la fecha actual
 document.getElementById("currentYear").innerHTML = new Date().getFullYear();

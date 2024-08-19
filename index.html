@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miportafolio</title>
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="responsive.css">
     <script src="https://kit.fontawesome.com/e0408eb5f5.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-    <div id="header">
-        <div class="container">
+  
+        
             <nav>
-                <img src="LOGO.png" alt="logo" class="logo">
+                <img src="imagen/logo.png" alt="logo" class="logo">
                 <ul id="sidemenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">Sobre Mi</a></li>
@@ -23,18 +24,25 @@
                 </ul>
                 <i class="fa-solid fa-bars" onclick="abrirmenu()"></i>
             </nav>
-            <div class="header-text">
-                <p>UI/UX Diseño</p>
-                <h1>Hola, Soy, <span>Edgar </span> <br> Romero Cuc Chocoj</h1>
-            </div>
-        </div>
-    </div>
+            
+            <section id="Home">
+                <div class="text-container">
+                    <span>Hola Soy, </span>
+                    <h1>Edgar Romero Cuc</h1>
+                     
+                    <button class="btn" onclick="abrirWhatsApp()">Contáctame</span>
+                </div>
+                <div class="image-container">
+                    <img src="/imagen/foto.png" alt="Foto">
+                </div>
+            </section>
+
 
     <section id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="edgar3.png" alt="">
+                    <img src="imagen/foto1.png" alt="">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">Sobre Mí</h1>
@@ -87,74 +95,71 @@
 
     </section>
         <!-----------------seccion de servicios---------------------->
+       
         <section id="servicios">
             <div class="container">
                 <h1 class="sub-title">Mis Servicios</h1>
                 <div class="servicios-list">
-                    <div>
+                    <div class="servicio-box">
                         <i class="fa-solid fa-code"></i>
                         <h2>Desarrollo Web</h2>
                         <p>
-                            Ofrezco servicios de desarrollo web para crear sitios web modernos y funcionales. Utilizo las últimas tecnologías y prácticas de desarrollo para construir soluciones adaptadas a las necesidades de mis clientes.
+                            Ofrezco servicios de desarrollo web para crear sitios web modernos y funcionales. Utilizo las últimas tecnologías y prácticas de desarrollo para construir soluciones adaptadas a las necesidades de mis clientes, incluyendo HTML, CSS y JavaScript.
                         </p>
-                        
                     </div>
-                    <div>
+                    <div class="servicio-box">
                         <i class="fa-solid fa-crop-simple"></i>
                         <h2>Diseño UI/UX</h2>
                         <p>
                             Me especializo en diseño de interfaz de usuario (UI) y experiencia de usuario (UX). Creo diseños atractivos y fáciles de usar que mejoran la interacción entre los usuarios y las aplicaciones.
                         </p>
-                        
                     </div>
-                    <div>
-                        <i class="fa-brands fa-app-store"></i>
-                        <h2>Desarrollo de Aplicaciones</h2>
+                    <div class="servicio-box">
+                        <i class="fa-brands fa-react"></i>
+                        <h2>Aplicaciones Web</h2>
                         <p>
-                            Desarrollo aplicaciones web y móviles personalizadas para satisfacer las necesidades específicas de mis clientes. Desde el frontend hasta el backend, garantizo soluciones robustas y escalables.
+                            Desarrollo aplicaciones web personalizadas utilizando ReactJS para garantizar una experiencia de usuario fluida y dinámica.
                         </p>
-                       
                     </div>
                 </div>
             </div>
         </section>
                 <!-----------------seccion de servicios---------------------->
-    <section id="portafolio">
-        <div class="container">
-            <h1 class="sub-title"> Mi trabajos</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="./imagen/todolist.jfif" alt="">
-                    <div class="layer">
-                        <h3>Lista de tareas</h3>
-                        <p>El proyecto de Lista de Tareas es una aplicación web que permite a los usuarios gestionar sus tareas diarias de manera eficiente. Con esta aplicación, los usuarios pueden agregar nuevas tareas, editar las existentes, marcarlas como completadas y eliminarlas cuando sea necesario.</p>
-                        <a href="https://taupe-macaron-1a6e08.netlify.app/ " target="_blank"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                <section id="portafolio">
+                    <div class="container">
+                        <h1 class="sub-title">Mis Trabajos</h1>
+                        <div class="work-list">
+                            <div class="work">
+                                <img src="/imagen/todolist.jfif" alt="Lista de tareas">
+                                <div class="layer">
+                                    <h3>Lista de tareas</h3>
+                                    <p>El proyecto de Lista de Tareas es una aplicación web que permite a los usuarios gestionar sus tareas diarias de manera eficiente. Con esta aplicación, los usuarios pueden agregar nuevas tareas, editarlas, marcarlas como completadas y eliminarlas cuando sea necesario.</p>
+                                    <a href="https://taupe-macaron-1a6e08.netlify.app/" target="_blank"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                
+                            <div class="work">
+                                <img src="/imagen/clima.jfif" alt="App para Clima">
+                                <div class="layer">
+                                    <h3>App para Clima</h3>
+                                    <p>Clima es una aplicación web que proporciona a los usuarios información en tiempo real sobre las condiciones climáticas. La aplicación utiliza una API de clima para obtener datos actualizados y mostrarlos de manera fácil de entender.</p>
+                                    <a href="https://gilded-croquembouche-8e711e.netlify.app/" target="_blank"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                
+                            <div class="work">
+                                <img src="/imagen/paginaweb.jfif" alt="Tienda en Línea">
+                                <div class="layer">
+                                    <h3>Tienda en Línea</h3>
+                                    <p>Es una plataforma web diseñada para proporcionar a los usuarios una experiencia de compra intuitiva y eficiente. </p>
+                                    <a href="https://whimsical-biscochitos-e21d33.netlify.app/" target="_blank"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-
-                <div class="work">
-                    <img src="./imagen/clima.jfif" alt="">
-                    <div class="layer">
-                        <h3>App para Clima</h3>
-                        <p> Clima es una aplicación web que proporciona a los usuarios información en tiempo real sobre las condiciones climáticas. La aplicación utiliza una API de clima para obtener datos actualizados y mostrarlos de manera fácil de entender.</p>
-                        <a href="https://gilded-croquembouche-8e711e.netlify.app/" target="_blank" ><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-
-                <div class="work">
-                    <img src="./imagen/paginaweb.jfif" alt="">
-                    <div class="layer">
-                        <h3>Tienda en Línea</h3>
-                        <p>La Tienda en Línea, es una plataforma web diseñada para proporcionar a los usuarios una experiencia de compra intuitiva y eficiente. Ofrece una interfaz atractiva donde los clientes pueden explorar productos, agregarlos al carrito, ajustar cantidades y realizar compras de manera sencilla. Una característica única de esta tienda es que, al confirmar la compra, se redirige automáticamente al cliente al WhatsApp del propietario para facilitar la comunicación directa.</p>
-                        <a href="https://whimsical-biscochitos-e21d33.netlify.app/ "  target="_blank"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-            </div>
-            <a href="#" class="btn">Ver más</a>
-        </div>
-    </section>
+                </section>
      <!-----------------seccion de contacto---------------------->
-    <section id="contacto">
+     <section id="contacto">
         <div class="container">
             <div class="row">
                 <div class="contact-left">
@@ -169,7 +174,15 @@
                         <a href="https://www.tiktok.com/@edukuk1" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
                         
                     </div>
-                    <a href="CV_EDGAR.pdf" class="btn  btn2" download="CV_EDGAR.pdf" target="_blank">Descargar CV</a>
+
+                    <a 
+                    class="btn  btn2"
+                    href="CV-ED.pdf"
+                    download="CV-ED.pdf"
+
+                    target="_blank"
+                    >Descargar CV</a>
+
                 </div>
                 <div class="contact-right">
                     <form onsubmit="enviarWhatsApp(event)">
@@ -186,6 +199,7 @@
             <p>&copy; <span id="currentYear"></span> Edgar Romero Cuc Chocoj <i class="fa-solid fa-heart"></i>- Portafolio</p>
         </div>
     </section>
+
     <script src="app.js"></script>
     
 </body>
